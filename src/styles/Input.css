@@ -1,0 +1,15 @@
+@import "App.css";
+
+.inputDetails {
+  display: flex;
+  flex-direction: column;
+  width: 80vw;
+  margin: 5vh auto;
+  background: var(--white);
+  border-radius: 20px;
+  gap: 50px;
+  padding: 20px;
+  box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
+  -webkit-box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
+  -moz-box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px
+}

@@ -1,0 +1,13 @@
+@import "App.css";
+
+.cvHeader {
+  display: flex;
+  font-size: 30px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background: var(--darker);
+  color: white;
+  font-style: italic;
+}

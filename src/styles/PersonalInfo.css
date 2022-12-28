@@ -1,0 +1,17 @@
+@import "App.css";
+
+.personalInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input[type="text"],
+input[type="tel"] {
+  height: 2.5em;
+  padding: 0.5rem;
+  font-size: 16px;
+  text-indent: 10px;
+  border-radius: 10px;
+  border: none;
+}
