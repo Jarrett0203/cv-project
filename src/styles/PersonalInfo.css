@@ -1,4 +1,5 @@
 @import "App.css";
+@import "Form.css";
 
 .personalInfo {
   display: flex;
@@ -6,12 +7,17 @@
   gap: 10px;
 }
 
-input[type="text"],
-input[type="tel"] {
-  height: 2.5em;
-  padding: 0.5rem;
-  font-size: 16px;
-  text-indent: 10px;
-  border-radius: 10px;
-  border: none;
+label {
+  border: 1px solid black;
+  border-radius: 20px;
+  width: fit-content;
+  padding: 10px;
+  cursor: pointer;
+  background: var(--grey);
+  color: white;
+}
+
+label:hover {
+  background: var(--lightgrey);
+  color: black;
 }

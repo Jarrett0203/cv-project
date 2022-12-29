@@ -3,7 +3,7 @@
 .inputDetails {
   display: flex;
   flex-direction: column;
-  width: 80vw;
+  width: 60vw;
   margin: 5vh auto;
   background: var(--white);
   border-radius: 20px;

@@ -1,0 +1,26 @@
+@import "App.css";
+@import "Form.css";
+
+.pdf {
+  background-color: rgb(27, 161, 72);
+}
+
+.pdf:hover {
+  background-color: rgb(25, 142, 64);
+}
+
+.example {
+  background-color: orange;
+}
+
+.example:hover {
+  background-color: rgb(205, 135, 5);
+}
+
+.reset {
+  background-color: red;
+}
+
+.reset:hover {
+  background-color: rgb(201, 2, 2);
+}

@@ -1,0 +1,59 @@
+@import "App.css";
+
+.resume {
+  display: grid;
+  width: 60vw;
+  height: 100vh;
+  background: var(--white);
+  margin: 0 auto;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr 5fr;
+}
+
+.resumeHeader {
+  display: flex;
+  flex-direction: column;
+  background: rgb(35, 35, 149);
+  height: 100%;
+  font-size: 30px;
+  color: white;
+  padding: 20px;
+  justify-content: center;
+  grid-column: 1/4;
+}
+
+.title {
+  font-size: 20px;
+  font-style: italic;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 20px;
+}
+
+.main h3, .personalDetails h4 {
+  text-decoration: underline;
+}
+
+.profileImage {
+  height: 150px;
+  width: 150px;
+  align-self: center;
+}
+
+.personalDetails {
+  display: flex;
+  flex-direction: column;
+  background: var(--lightgrey);
+  padding: 10px;
+  gap: 20px;
+}
+
+.detailsSection {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
