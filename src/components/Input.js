@@ -17,7 +17,6 @@ const Input = forwardRef(({
   onLoadExample,
   onReset
 }, ref) => {
-  console.log(cv);
   return (
     <div action="#" className="inputDetails">
       <PersonalInfo personalInfo = {cv.personalInfo} onChangePersonal={onChangePersonal}/>

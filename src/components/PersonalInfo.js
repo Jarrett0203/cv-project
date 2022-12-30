@@ -21,7 +21,7 @@ const PersonalInfo = ({ personalInfo, onChangePersonal }) => {
       />
       <input
         type="text"
-        className="titleName"
+        className="title"
         placeholder="Title"
         onChange={(e) => onChangePersonal(e)}
         value={personalInfo.title}
@@ -57,7 +57,7 @@ const PersonalInfo = ({ personalInfo, onChangePersonal }) => {
         className="email"
         placeholder="Email Address"
         onChange={(e) => onChangePersonal(e)}
-        value={personalInfo.address}
+        value={personalInfo.email}
       />
       <input
         type="text"

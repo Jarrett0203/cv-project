@@ -11,16 +11,18 @@ function App() {
   const [cv, setCv] = useState(emptyCV);
 
   const handleChangePersonal = (e) => {
-    const { name, value, type } = e.target;
+    const { className, value, type } = e.target;
     if (type === "file") {
       handleChangeFile(e);
+      return;
     }
+    console.log(e.target.className);
 
     setCv((prevState) => ({
       ...prevState,
       personalInfo: {
         ...prevState.personalInfo,
-        [name]: value,
+        [className]: value,
       },
     }));
   };
@@ -40,6 +42,7 @@ function App() {
         },
       }));
     };
+    reader.readAsDataURL(file);
   };
 
   const handleChangeExperience = (e, id) => {

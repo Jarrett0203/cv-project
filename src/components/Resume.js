@@ -7,8 +7,8 @@ const Resume = forwardRef((cv, ref) => {
   return (
     <div className="resume" ref={ref}>
       <header className="resumeHeader">
-        <p className="name">{firstName} {lastName}</p>
-        <p className="title">{title}</p>
+        <p className="nameResume">{firstName} {lastName}</p>
+        <p className="titleResume">{title}</p>
       </header>
       <div className="main">
         <div className="description">
