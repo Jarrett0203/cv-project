@@ -17,7 +17,7 @@ label {
   color: white;
 }
 
-label:hover {
+.photoPrompt:hover {
   background: var(--lightgrey);
   color: black;
 }

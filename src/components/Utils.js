@@ -1,14 +1,22 @@
-import React from "react";
+import React, { forwardRef } from "react";
+import ReactToPrint from "react-to-print";
 import "./../styles/Utils.css";
 
-const Utils = () => {
+const Utils = forwardRef(({ onLoadExample, onReset }, ref) => {
   return (
     <div className="utils">
-      <button className="pdf">Generate PDF</button>
-      <button className="example">Load example</button>
-      <button className="reset">Reset</button>
+      <ReactToPrint
+        trigger={() => <button className="pdf">Generate PDF</button>}
+        content={() => ref.current}
+      />
+      <button className="example" onClick={onLoadExample}>
+        Load example
+      </button>
+      <button className="reset" onClick={onReset}>
+        Reset
+      </button>
     </div>
   );
-};
+});
 
 export default Utils;
