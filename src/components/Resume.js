@@ -1,17 +1,19 @@
-import React from "react";
+import React, { forwardRef } from "react";
 import ".././styles/Resume.css";
 
-const Resume = () => {
+const Resume = forwardRef((cv, ref) => {
+  const {firstName, lastName, title, photo, address, number, email, description} = cv.cv.personalInfo;
+  const education = cv.cv.education;
   return (
-    <div className="resume">
+    <div className="resume" ref={ref}>
       <header className="resumeHeader">
-        <p className="name">fasdf</p>
-        <p className="title">asdfasdf</p>
+        <p className="name">{firstName} {lastName}</p>
+        <p className="title">{title}</p>
       </header>
       <div className="main">
         <div className="description">
           <h3>Description</h3>
-          <p className="descriptionText"></p>
+          <p className="descriptionText">{description}</p>
         </div>
         <div className="experience">
           <h3>Experience</h3>
@@ -21,18 +23,18 @@ const Resume = () => {
         </div>
       </div>
       <div className="personalDetails">
-        <img src={require("../images/defaultProfile.png")} alt="Profile" className="profileImage" />
+        <img src={photo} alt="Profile" className="profileImage" />
         <div className="detailsSection">
           <h4>Address</h4>
-          <p className="address"></p>
+          <p className="address">{address}</p>
           <h4>Phone Number</h4>
-          <p className="number"></p>
+          <p className="number">{number}</p>
           <h4>Email</h4>
-          <p className="email"></p>
+          <p className="email">{email}</p>
         </div>
       </div>
     </div>
   );
-};
+});
 
 export default Resume;

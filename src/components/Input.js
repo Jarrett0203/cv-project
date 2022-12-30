@@ -1,19 +1,35 @@
-import React from "react";
+import React, { forwardRef } from "react";
 import "./../styles/Input.css";
 import PersonalInfo from "./PersonalInfo";
 import Experience from "./Experience";
 import Education from "./Education";
 import Utils from "./Utils";
 
-const Input = () => {
+const Input = forwardRef(({
+  cv,
+  onChangePersonal,
+  onChangeExperience,
+  onAddExperience,
+  onDeleteExperience,
+  onChangeEducation,
+  onAddEducation,
+  onDeleteEducation,
+  onLoadExample,
+  onReset
+}, ref) => {
+  console.log(cv);
   return (
-    <form action="POST" className="inputDetails">
-      <PersonalInfo />
+    <div action="#" className="inputDetails">
+      <PersonalInfo personalInfo = {cv.personalInfo} onChangePersonal={onChangePersonal}/>
       <Experience />
       <Education />
-      <Utils />
-    </form>
+      <Utils
+        onLoadExample={onLoadExample}
+        onReset={onReset}
+        ref={ref}
+      />
+    </div>
   );
-};
+});
 
 export default Input;
