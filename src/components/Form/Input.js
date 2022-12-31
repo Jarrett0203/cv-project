@@ -1,5 +1,5 @@
 import React, { forwardRef } from "react";
-import "./../styles/Input.css";
+import "./../../styles/Form/Input.css";
 import PersonalInfo from "./PersonalInfo";
 import Experience from "./Experience";
 import Education from "./Education";

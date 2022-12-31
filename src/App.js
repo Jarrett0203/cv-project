@@ -1,8 +1,8 @@
 import React, { useState, useRef } from "react";
 import "./styles/App.css";
 import Header from "./components/Header";
-import Input from "./components/Input";
-import Resume from "./components/Resume";
+import Input from "./components/Form/Input";
+import Resume from "./components/Resume/Resume";
 import emptyCV from "./components/EmptyCV";
 import exampleCV from "./components/ExampleCV";
 import { v4 as uuidv4 } from "uuid";

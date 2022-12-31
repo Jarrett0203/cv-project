@@ -1,6 +1,6 @@
 import React from "react";
 import ExperienceItem from "./ExperienceItem";
-import "./../styles/Experience.css";
+import "./../../styles/Form/Experience.css";
 
 const Experience = ({ experience, onChange, onAdd, onDelete }) => {
   const experienceItems = experience.map((experienceItem) => {

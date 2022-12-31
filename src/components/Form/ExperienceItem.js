@@ -1,5 +1,5 @@
 import React from "react";
-import "./../styles/ExperienceItem.css";
+import "./../../styles/Form/ExperienceItem.css";
 
 const ExperienceItem = ({ id, experienceItem, onChange, onDelete }) => {
   return (

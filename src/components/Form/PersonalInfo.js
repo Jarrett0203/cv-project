@@ -1,5 +1,5 @@
 import React from "react";
-import "./../styles/PersonalInfo.css";
+import "./../../styles/Form/PersonalInfo.css";
 
 const PersonalInfo = ({ personalInfo, onChangePersonal }) => {
   return (

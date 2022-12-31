@@ -1,7 +1,7 @@
 import React from "react";
-import "./../styles/Education.css";
+import "./../../styles/Form/Education.css";
 
-const Experience = () => {
+const Experience = ({education, onChange, onAdd, onDelete}) => {
   return (
     <div className="education">
       <h3>Education</h3>
