@@ -23,7 +23,7 @@ const Resume = forwardRef((cv, ref) => {
         </div>
       </div>
       <div className="personalDetails">
-        <img src={photo} alt="Profile" className="profileImage" />
+        <img src={photo} alt="Profile" className="photo" />
         <div className="detailsSection">
           <h4>Address</h4>
           <p className="address">{address}</p>

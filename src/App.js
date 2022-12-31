@@ -16,8 +16,6 @@ function App() {
       handleChangeFile(e);
       return;
     }
-    console.log(e.target.className);
-
     setCv((prevState) => ({
       ...prevState,
       personalInfo: {
@@ -30,10 +28,11 @@ function App() {
   const handleChangeFile = (e) => {
     const { name } = e.target;
     const file = e.target.files[0];
-    if (!file) return;
-
     const reader = new FileReader();
+    if (!file) return;
+    reader.readAsDataURL(file);
     reader.onload = () => {
+      console.log(reader.result);
       setCv((prevState) => ({
         ...prevState,
         personalInfo: {
@@ -42,15 +41,13 @@ function App() {
         },
       }));
     };
-    reader.readAsDataURL(file);
   };
 
   const handleChangeExperience = (e, id) => {
-    const { name, value } = e.target;
-
+    const { className, value } = e.target;
     setCv((prevState) => {
       const newExperience = prevState.experience.map((expItem) => {
-        if (expItem.id === id) return { ...expItem, [name]: value };
+        if (expItem.id === id) return { ...expItem, [className]: value };
         return expItem;
       });
       return { ...prevState, experience: [...newExperience] };
@@ -85,7 +82,6 @@ function App() {
 
   const handleChangeEducation = (e, id) => {
     const { name, value } = e.target;
-
     setCv((prevState) => {
       const newEducation = prevState.education.map((educationItem) => {
         if (educationItem.id === id) {

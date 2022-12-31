@@ -38,10 +38,12 @@
   text-decoration: underline;
 }
 
-.profileImage {
-  height: 150px;
-  width: 150px;
+.photo {
+  height: 250px;
+  width: 200px;
   align-self: center;
+  object-fit: cover;
+  object-position: center;
 }
 
 .personalDetails {

@@ -31,10 +31,10 @@ const PersonalInfo = ({ personalInfo, onChangePersonal }) => {
         <input
           type="file"
           className="hidden"
-          name="Photo"
+          name="photo"
           id="photoInput"
           accept=".png, .jpg, .jpeg"
-          onChange={(e) => onChangePersonal(e)}
+          onChange={(e) => onChangePersonal(e)}        
         />
       </label>
       <input
