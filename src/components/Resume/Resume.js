@@ -1,6 +1,7 @@
 import React, { forwardRef } from "react";
 import "../../styles/Resume/Resume.css";
 import ExperienceItem from "../Resume/ExperienceItem";
+import EducationItem from "../Resume/EducationItem"
 
 const Resume = forwardRef((cv, ref) => {
   const {
@@ -22,6 +23,14 @@ const Resume = forwardRef((cv, ref) => {
       experienceItem={experienceItem}
     ></ExperienceItem>
   ));
+
+  const educationItems = education.map((educationItem) => (
+    <EducationItem
+      key={educationItem.id}
+      educationItem={educationItem}
+    ></EducationItem>
+  ));
+
   return (
     <div className="resume" ref={ref}>
       <header className="resumeHeader">
@@ -41,6 +50,7 @@ const Resume = forwardRef((cv, ref) => {
         </div>
         <div className="education">
           <h3>Education</h3>
+          {educationItems}
         </div>
       </div>
       <div className="personalDetails">

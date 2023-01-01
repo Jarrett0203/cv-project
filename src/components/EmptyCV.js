@@ -25,7 +25,7 @@ const emptyCV = {
   education: [
     {
       id: uuidv4(),
-      universityName: "",
+      university: "",
       city: "",
       degree: "",
       subject: "",

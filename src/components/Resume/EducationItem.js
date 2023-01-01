@@ -1,13 +1,15 @@
 import React from "react";
+import "../../styles/Resume/EducationItem.css"
 
-const EducationItem = ({experienceItem}) => {
-  const {from, to, position, company, city} = experienceItem;
+const EducationItem = ({educationItem}) => {
+  const {from, to, university, city, degree, subject} = educationItem;
   return (
-    <div className="resumeExperienceItem">
+    <div className="resumeEducationItem">
       <p className="period">{from} - {to}</p>
       <div className="info">
-        <p className="position">{position}</p>
-        <p className="details">{company}, {city}</p>
+        <p className="university">{university}, {city}</p>
+        <p className="degree">Degree: {degree}</p>
+        <p className="subject">Subject: {subject}</p>
       </div>
     </div>
   );

@@ -81,11 +81,11 @@ function App() {
   };
 
   const handleChangeEducation = (e, id) => {
-    const { name, value } = e.target;
+    const { className, value } = e.target;
     setCv((prevState) => {
       const newEducation = prevState.education.map((educationItem) => {
         if (educationItem.id === id) {
-          return { ...educationItem, [name]: value };
+          return { ...educationItem, [className]: value };
         }
         return educationItem;
       });
